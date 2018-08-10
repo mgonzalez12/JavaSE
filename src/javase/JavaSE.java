@@ -1,4 +1,3 @@
-
 package javase;
 
 /*
@@ -8,10 +7,14 @@ public class JavaSE {
 
     public static void main(String[] args) {
       
-        Perro p = new Perro("Chiguagua","Azabache","perrarina",3);
-        
-        // metodo mostrar
-        p.mostrar();
+      // metodo de instancia puede ser accedido por un objeto ejemplo per.mostrarDeInstancia
+      Persona per = new Persona();
+      per.setNombre("Marcos");
+      per.setEdad(30);
+      per.mostrarDeInstancia();
+      
+      //  metodo static puede ser accedido por la clase definicion de la clase 
+      Persona.mostrarDeClase();
     }
     
 }
